@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.bg {
+	background: url("https://images.pexels.com/photos/1013516/pexels-photo-1013516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+		no-repeat center center/cover;
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	width: calc(100vw + 40px);
+	height: calc(100vh + 40px);
+	z-index: -1;
+	filter: blur(20px);
+	transition: filter 0.2s ease-out;
+}
+
+.loading-text {
+	font-size: 50px;
+	color: white;
+}

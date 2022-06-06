@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.slider {
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	height: 500px;
+	width: 800px;
+	overflow: hidden;
+}
+
+.image-container {
+	display: flex;
+	transform: translateX(0);
+	transition: transform 0.5s ease-in-out;
+}
+
+img {
+	width: 800px;
+	object-fit: cover;
+}
